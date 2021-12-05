@@ -57,7 +57,7 @@ let load = () => {
         }
         interval = true;
         
-      }, 1000);
+      }, 500);
       clearInterval(loadingInterval);
     }
   }, 200);
