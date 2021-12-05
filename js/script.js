@@ -53,10 +53,10 @@ let load = () => {
       let fadeInterval = setInterval(() => {
         if(interval) {
           loadingScreenEl.style.display = "none";
-          loadingScreenEl.style.display = "none";
+          clearInterval(fadeInterval);
         }
         interval = true;
-        clearInterval(fadeInterval);
+        
       }, 1000);
       clearInterval(loadingInterval);
     }
