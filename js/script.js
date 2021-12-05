@@ -1,10 +1,10 @@
 function playSound(funnySound) {
-  let bruhSound = new Audio("../sounds/Bruh-Sound-Effect.mp3");
-  let boomSound = new Audio("../sounds/vine-boom.mp3");
-  let pickup1Sound = new Audio("../sounds/pickup1.mp3");
-  let pickup2Sound = new Audio("../sounds/pickup2.mp3");
-  let pickup3Sound = new Audio("../sounds/pickup3");
-  let backupSound = new Audio("../sounds/backup.mp3");
+  let bruhSound = new Audio("https://raw.githubusercontent.com/Swoohn/deez-nuts-calculator/main/sounds/Bruh-Sound-Effect.mp3");
+  let boomSound = new Audio("https://raw.githubusercontent.com/Swoohn/deez-nuts-calculator/main/sounds/vine-boom.mp3");
+  let pickup1Sound = new Audio("https://raw.githubusercontent.com/Swoohn/deez-nuts-calculator/main/sounds/pickup1.mp3");
+  let pickup2Sound = new Audio("https://raw.githubusercontent.com/Swoohn/deez-nuts-calculator/main/sounds/pickup2.mp3");
+  let pickup3Sound = new Audio("https://raw.githubusercontent.com/Swoohn/deez-nuts-calculator/main/sounds/pickup3.mp3");
+  let backupSound = new Audio("https://raw.githubusercontent.com/Swoohn/deez-nuts-calculator/main/sounds/backup.mp3");
   switch (funnySound) {
     case "bruh":
       bruhSound.play();
