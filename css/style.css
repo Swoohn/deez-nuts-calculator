@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    color: #E3D081;
+    width: 600px;
+    text-shadow: #63372C 2px 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #c97d60, #63372C);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 75px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px, solid #FFFFFF;
+    outline: none;
+    background-color: rgba(255,255,255,0.75);
+    box-shadow: #63372C 4px 4px;
+}
+
+.calculator-grid > button:hover {
+    background-color: #a9a9a9;
+}
+
+.span-two {
+    grid-column: span 2;
+    color: #f80240;
+    background-color: rgba(139, 0, 139, 0.8);
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 90px;
+}
+
+.output .previous-operand {
+    color: #90A9B7;
+    text-shadow: #262322 1px 1px;
+    font-size: 1.5rem;
+    align-items: flex-start;
+}
+
+.output .current-operand {
+    color: #E3D081;
+    text-shadow: #63372C 1px 1px;
+    font-size: 2.5rem;
+    align-items: center;
+    margin-bottom: 7px
+}
+
+.loading-header {
+    width: 100vw;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: #262322;
+    position: absolute;
+}
+
+.loading {
+    bottom: 40vh;
+    height: 5vh;
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: #a9a9a9;
+}
+
+.load-percent {
+    padding-left: 50%;
+    color: white;
+    padding-top: 10px;
+}
+
+.bar {
+    bottom: 40vh;
+    height: 5vh;
+    width: 0;
+    background-color: #63372C;
+}
